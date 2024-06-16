@@ -3,17 +3,6 @@ from django.db import models
 from django.utils import timezone
 
 class Post(models.Model):
-    """
-    This class represents a blog post in a Django application.
-
-    Attributes:
-    author: The user who created the post.
-    title: The title of the post.
-    text: The content of the post.
-    created_date: The date and time when the post was created.
-    published_date: The date and time when the post was published.
-    """
-
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
