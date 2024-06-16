@@ -1,66 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Django Yasho blog</title>
+        <title>Django Yasho Blog</title>
         <style>
             body {
-                font-family: Arial, sans-serif;
-                background-color: #f5f5f5;
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                background-color: #f0f0f0;
                 margin: 0;
                 padding: 0;
+                color: #333;
             }
 
             header {
-                background-color: #333;
+                background-color: #222;
                 color: #fff;
                 padding: 20px;
                 text-align: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
             header h1 {
                 margin: 0;
+                font-size: 2.5em;
             }
 
             header h1 a {
                 color: #fff;
                 text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            header h1 a:hover {
+                color: #ddd;
             }
 
             article {
                 background-color: #fff;
                 border: 1px solid #ddd;
-                border-radius: 4px;
-                margin: 20px;
+                border-radius: 8px;
+                margin: 20px auto;
                 padding: 20px;
+                max-width: 800px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
             article time {
                 color: #999;
                 display: block;
                 margin-bottom: 10px;
+                font-size: 0.9em;
             }
 
             article h2 {
                 margin-top: 0;
+                font-size: 1.8em;
             }
 
             article h2 a {
                 color: #333;
                 text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            article h2 a:hover {
+                color: #428bca;
             }
 
             .article-image {
                 width: 100%;
                 height: auto;
                 margin-bottom: 20px;
+                border-radius: 8px;
             }
 
             .article-content {
-                line-height: 1.6;
+                line-height: 1.8;
+                font-size: 1.1em;
             }
 
             .article-content p {
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
 
             .article-content strong {
@@ -74,6 +93,7 @@
             .article-content a {
                 color: #428bca;
                 text-decoration: none;
+                transition: text-decoration 0.3s;
             }
 
             .article-content a:hover {
@@ -87,11 +107,11 @@
         </header>
 
         <article>
-            <time>published: 14.06.2014, 12:14</time>
+            <time>Published: 14.06.2014, 12:14</time>
             <h2><a href="">Chris Brown, Lil Wayne, and J. Cole: A Music Mashup</a></h2>
             <img class="article-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHYsz-AFN1i_EjRX5TsU3Gla12vb07w4VvWg&s" alt="Chris Brown, Lil Wayne, and J. Cole">
             <div class="article-content">
-                <p><strong>Chris Brown</strong>  is an American singer, songwriter, rapper, dancer and actor. He is one of the most prominent artists in R&B music,[note 1] being credited as an evolver of the genre,[8] and often being referred to by contemporaries as the "King of R&B".[note 2] His R&B has been characterized by influences from other genres, mainly pop and hip hop. His lyrics develop predominantly over emotional and hedonistic themes.[note 3] Brown has had comparisons to Michael Jackson for his singing and dancing abilities. He rose to fame with his debut album, <em>Chris Brown</em>, released in 2006. Brown has since released several successful albums, including <em>Forever</em> (2008), <em>FAME</em> (2011), and <em>Fortune</em> (2012).</p>
+                <p><strong>Chris Brown</strong> is an American singer, songwriter, rapper, dancer, and actor. He is one of the most prominent artists in R&B music, being credited as an evolver of the genre, and often being referred to by contemporaries as the "King of R&B". His R&B has been characterized by influences from other genres, mainly pop and hip hop. His lyrics develop predominantly over emotional and hedonistic themes. Brown has had comparisons to Michael Jackson for his singing and dancing abilities. He rose to fame with his debut album, <em>Chris Brown</em>, released in 2006. Brown has since released several successful albums, including <em>Forever</em> (2008), <em>FAME</em> (2011), and <em>Fortune</em> (2012).</p>
                 <p><strong>Lil Wayne</strong> is an American rapper, actor, and entrepreneur. He is known for his charismatic personality and his work as a rapper, actor, and producer. Wayne has released several successful albums, including <em>Tha Carter III</em> (2008), <em>I Am Not a Human Being II</em> (2011), and <em>Rebirth</em> (2016).</p>
                 <p><strong>J. Cole</strong> is an American rapper, singer, songwriter, and actor. He is known for his unique style and his work as a rapper, actor, and producer. Cole has released several successful albums, including <em>2014 Forest Hills Drive</em> (2014), <em>KOD</em> (2016), and <em>2018 Forest Hills Drive</em> (2018).</p>
                 <p>In this article, we will explore the collaboration between Chris Brown, Lil Wayne, and J. Cole, highlighting their musical styles and their impact on the music industry.</p>
